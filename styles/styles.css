@@ -1,0 +1,237 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --light-red-b: hsla(0, 100%, 67%, 15%);
+  --orangey-yellow-b: hsla(39, 100%, 56%, 15%);
+  --green-teal-b: hsla(166, 100%, 37%, 15%);
+  --cobalt-blue-b: hsla(234, 85%, 45%, 15%);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --light-grey: hsl(206, 8%, 61%);
+
+  /* Gradient background */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  /* Gradient circle */
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+}
+
+/* result */
+.result {
+  background: linear-gradient(
+    var(--light-slate-blue) 50%,
+    var(--light-royal-blue) 100%
+  );
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 25px 25px 40px 25px;
+  text-align: center;
+}
+
+.result h2 {
+  color: var(--light-lavender);
+  font-size: 1.2rem;
+}
+
+.result .circle {
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 30px auto;
+  padding: 25px;
+}
+
+.result .circle p#result_number {
+  color: var(--white);
+  font-size: 3.333rem;
+  font-weight: 800;
+}
+
+.result .circle p#total {
+  color: var(--light-lavender);
+}
+
+.result h1 {
+  color: var(--white);
+  font-size: 1.66rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.result p {
+  color: var(--light-lavender);
+}
+
+/* summary */
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.summary #summary_title {
+  color: var(--dark-gray-blue);
+  align-self: flex-start;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.summary .results_areas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 18px;
+}
+
+.summary .results_areas .result_card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  padding: 16px;
+  justify-content: space-between;
+  font-weight: 800;
+}
+
+.summary .results_areas .result_card .card_title img {
+  margin: 0;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+
+.results_areas .result_card #value_total p:nth-child(1) {
+  color: var(--dark-gray-blue);
+  display: inline;
+  margin-right: 2px;
+}
+
+.results_areas .result_card #value_total p:nth-child(2) {
+  color: var(--light-grey);
+  display: inline;
+}
+
+.results_areas .result_card.reaction {
+  background-color: var(--light-red-b);
+  color: var(--light-red);
+}
+
+.results_areas .result_card.memory {
+  background-color: var(--orangey-yellow-b);
+  color: var(--orangey-yellow);
+}
+
+.results_areas .result_card.verbal {
+  background-color: var(--green-teal-b);
+  color: var(--green-teal);
+}
+
+.results_areas .result_card.visual {
+  background-color: var(--cobalt-blue-b);
+  color: var(--cobalt-blue);
+}
+
+.summary button {
+  background-color: var(--dark-gray-blue);
+  color: var(--pale-blue);
+  border: none;
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 1rem;
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.summary button:hover {
+  cursor: pointer;
+  background-color: var(--light-royal-blue);
+}
+
+@media (min-width:768px) {
+    
+    main {
+        flex-direction: row;
+        width: 736px;
+        height: 512px;
+        border-radius: 30px;
+        box-shadow: 20px 20px 20px 5px var(--pale-blue);
+    }
+
+    .result {
+        border-radius: 30px;
+        width: 50%;
+        height: 100%;
+        padding: 40px 60px;
+    }
+
+    .result h2 {
+    margin-bottom: 30px;
+    }
+
+    .result .circle {
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    padding-top: 50px;
+    }
+
+    .result .circle p#result_number {
+    font-size: 4rem;
+    }
+
+    .summary {
+        width: 50%;
+        padding-left: 40px;
+    }
+
+    .summary #summary_title {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    }
+
+    .summary button {
+    margin-top: 35px;
+    }
+}
