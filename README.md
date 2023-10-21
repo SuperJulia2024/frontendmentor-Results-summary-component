@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/SuperJulia2024/frontendmentor-Results-summary-component](https://github.com/SuperJulia2024/frontendmentor-Results-summary-component)
+- Live Site URL: [https://superjulia2024.github.io/frontendmentor-Results-summary-component](https://superjulia2024.github.io/frontendmentor-Results-summary-component/)
 
 ## My process
 
@@ -52,9 +52,9 @@ Reading a local JSON file using fetch()
 ```js
 window.onload = function (e) {
   const v_reaction = document.getElementById("value_reaction");
-  const v_memory   = document.getElementById("value_memory");
-  const v_verbal   = document.getElementById("value_verbal");
-  const v_visual   = document.getElementById("value_visual");
+  const v_memory = document.getElementById("value_memory");
+  const v_verbal = document.getElementById("value_verbal");
+  const v_visual = document.getElementById("value_visual");
 
   fetch("./data.json")
     .then(function (response) {
@@ -62,12 +62,13 @@ window.onload = function (e) {
     })
     .then(function (data) {
       v_reaction.innerHTML = data[0].score;
-      v_memory.innerHTML   = data[1].score;
-      v_verbal.innerHTML   = data[2].score;
-      v_visual.innerHTML   = data[3].score;
+      v_memory.innerHTML = data[1].score;
+      v_verbal.innerHTML = data[2].score;
+      v_visual.innerHTML = data[3].score;
     });
 };
 ```
+
 ## Author
 
 - Frontend Mentor - [@SuperJulia2024](https://www.frontendmentor.io/profile/SuperJulia2024)
