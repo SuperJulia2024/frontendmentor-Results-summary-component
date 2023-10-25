@@ -4,10 +4,10 @@
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
 
-  --light-red-b: hsla(0, 100%, 67%, 15%);
-  --orangey-yellow-b: hsla(39, 100%, 56%, 15%);
-  --green-teal-b: hsla(166, 100%, 37%, 15%);
-  --cobalt-blue-b: hsla(234, 85%, 45%, 15%);
+  --light-red-b: hsla(0, 100%, 67%, 10%);
+  --orangey-yellow-b: hsla(39, 100%, 56%, 10%);
+  --green-teal-b: hsla(166, 100%, 37%, 10%);
+  --cobalt-blue-b: hsla(234, 85%, 45%, 10%);
 
   --white: hsl(0, 0%, 100%);
   --pale-blue: hsl(221, 100%, 96%);
@@ -180,7 +180,7 @@ main {
   border-radius: 30px;
   padding: 20px;
   font-size: 1rem;
-  margin-top: 25px;
+  margin-top: 20px;
   font-weight: 700;
 }
 
