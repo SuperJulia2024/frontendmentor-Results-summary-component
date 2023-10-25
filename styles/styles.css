@@ -141,13 +141,13 @@ main {
   margin-right: 10px;
 }
 
-.results_areas .result_card #value_total p:nth-child(1) {
+.results_areas .result_card .value_total p:nth-child(1) {
   color: var(--dark-gray-blue);
   display: inline;
   margin-right: 2px;
 }
 
-.results_areas .result_card #value_total p:nth-child(2) {
+.results_areas .result_card .value_total p:nth-child(2) {
   color: var(--light-grey);
   display: inline;
 }
